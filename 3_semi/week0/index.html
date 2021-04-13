@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display"></div>
+    <button id="button"></button>
+    <div id="text"></div>
+    <button id="button2"></button>
+    <script>
+      const DISPLAY = document.getElementById("display")
+      const BUTTON = document.getElementById("button")
+      const TEXT = document.getElementById("text")
+      const BUTTON2 = document.getElementById("button2")
+      let count = 0
+
+      BUTTON.onclick = function() {
+        count = count + 1
+        DISPLAY.textContent = count
+      }
+      BUTTON2.onclick = function() {
+        TEXT.textContent = "ぼたんが押されました"
+      }
+    </script>
+  </body>
+</html>
