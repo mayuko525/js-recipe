@@ -11,3 +11,9 @@
 .transition {
   transition: all 1s;
 }
+
+.triangle {
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid black;
+  border-left: 50px solid transparent;
+}
