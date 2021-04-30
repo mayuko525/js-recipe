@@ -27,3 +27,21 @@ addButton.onclick = function() {
 
   inputElement.value = ""
 }
+
+//$("#add-button").click(function() {
+//alert($("input-todo").val())
+//})
+//$("input-todo").keypress(function(e) {
+//  if (e.which == 13) {
+//    $("#add-button").click()
+//  }
+//})
+
+function button_click() {
+  alert(document.getElementById("input-todo").value)
+}
+function keydown_enter() {
+  if (window.event.keyCode == 13) {
+    document.getElementById("add-button").click()
+  }
+}

@@ -19,8 +19,18 @@
         </div>
         <div class="list-footer">
           <div class="input-container">
-            <input type="text" class="input-todo" id="input-todo" />
-            <div class="input-button" id="add-button">追加</div>
+            <input
+              type="text"
+              class="input-todo"
+              id="input-todo"
+              onkeydown="keydown_enter();"
+            />
+            <input
+              type="button"
+              id="add-button"
+              value="追加"
+              onclick="button_click()"
+            />
           </div>
         </div>
       </div>
